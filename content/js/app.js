@@ -40,6 +40,7 @@ inputElem.addEventListener('keypress', (e)=> {
     if(e.keyCode === 13){
 
         fetchData()
+        inputElem.value = ''
 
     }
     
@@ -78,8 +79,3 @@ let todayDate = date.getDate()
 
 return `${day} ${todayDate} ${month} ${year}`
 }
-
-
-    
-
-    
